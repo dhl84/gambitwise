@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Credits | GambitWise</title>
+<meta name="description" content="Learn chess and Go one small step at a time, with a spoken coach. Put the board on your real table in mixed reality, or play in a calm virtual room. 27 steps teach the rules with mini-games and puzzles. Then play the coach at five named levels, from First steps to Strong club, or pass the headset to">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><nav><a href="index.html">Home</a> <a href="privacy.html">Privacy policy</a> <a href="credits.html" aria-current="page">Credits</a> <a href="support.html">Help and support</a> <a href="terms.html">Terms of use</a></nav></header>
+<main>
+<h1>GambitWise credits</h1>
+<p>This page names the work of others in GambitWise (GambitWise: Learn Chess and Go): the files, the software, the voice model and the sources of the facts. It also names the tools that we used. It is free to read, with no login.</p>
+<ul>
+<li>These third-party files keep their own licences. The store terms do not limit your rights under the licences of the third-party material listed here.</li>
+<li>No file in the app is under a licence that asks for attribution (CC BY, the Open Government Licence, Licence Ouverte or ODC-By).</li>
+<li>The developer and publisher is dav3studios.</li>
+</ul>
+<h2>Files in the app</h2>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Files in the app</th>
+<th>Made by</th>
+<th>Licence</th>
+<th>Source</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chess puzzles from the Lichess puzzle database</td>
+<td><code>assets/data/puzzles_lichess.json</code></td>
+<td>lichess.org (the Lichess puzzle database)</td>
+<td><a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a></td>
+<td><a href="https://database.lichess.org/">https://database.lichess.org/</a></td>
+<td>A filtered set of 24 puzzles (tools/filter_lichess.py), each checked by our own rules and engine (tools/check_lichess.gd). The position is shown after the first move of the line, as the Lichess page says. The game links are left out.</td>
+</tr>
+<tr>
+<td>The chess clock's low-time sound</td>
+<td><code>assets/audio/sfx/clock_low.wav</code></td>
+<td>dav3studios</td>
+<td>own work</td>
+<td>our own (<code>tools/audio/make_clock_sound.py</code>)</td>
+<td>Made by tools/audio/make_clock_sound.py: two soft sine tones, no recording or sample.</td>
+</tr>
+<tr>
+<td>The app icon and the launcher icons</td>
+<td><code>assets/icons/app_icon.png</code>, <code>assets/icons/launcher_192.png</code>, <code>assets/icons/launcher_foreground_432.png</code>, <code>assets/icons/launcher_background_432.png</code>, <code>assets/icons/launcher_monochrome_432.png</code></td>
+<td>dav3studios</td>
+<td>own work</td>
+<td>our own (<code>tools/store/store_art.gd</code>)</td>
+<td>Rendered by Godot from the app's own board, knight and stone meshes (src/gambit/board/), made in code. No picture, model or texture from anywhere else, and no generated image.</td>
+</tr>
+<tr>
+<td>voice_bank</td>
+<td>2075 files in <code>assets/audio/voice/</code></td>
+<td>dav3studios (the coach's voice, made with the Kokoro-82M model, voice bm_george)</td>
+<td>own work</td>
+<td>our own (<code>q3/engine/tools/audio/make_ui_voice.py</code>)</td>
+<td>Text from content/ (GambitVoice), spoken with content/pronunciation.json; mastered to -18 LUFS.</td>
+</tr>
+<tr>
+<td>Atkinson Hyperlegible</td>
+<td><code>engine/ui/theme/fonts/AtkinsonHyperlegible-Bold.ttf</code>, <code>engine/ui/theme/fonts/AtkinsonHyperlegible-Regular.ttf</code></td>
+<td>Braille Institute of America, Inc.</td>
+<td><a href="https://openfontlicense.org">SIL OFL 1.1</a></td>
+<td><a href="https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegible">https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegible</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>Ux Reading (Atkinson Hyperlegible with a plain zero)</td>
+<td><code>engine/ui/theme/fonts/UxReading-Bold.ttf</code>, <code>engine/ui/theme/fonts/UxReading-Regular.ttf</code></td>
+<td>Braille Institute of America, Inc. The plain zero is a change made by the engine (engine/ui/theme/tools/make_plain_zero_font.py).</td>
+<td><a href="https://openfontlicense.org">SIL OFL 1.1</a></td>
+<td><a href="https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegible">https://github.com/google/fonts/tree/main/ofl/atkinsonhyperlegible</a></td>
+<td>The zero has no slash or dot. The font has a new name, because the original's reserved font name is not used for a changed font.</td>
+</tr>
+<tr>
+<td>Andika</td>
+<td><code>engine/ui/theme/fonts/Andika-Bold.ttf</code>, <code>engine/ui/theme/fonts/Andika-Regular.ttf</code></td>
+<td>SIL International</td>
+<td><a href="https://openfontlicense.org">SIL OFL 1.1</a></td>
+<td><a href="https://github.com/google/fonts/tree/main/ofl/andika">https://github.com/google/fonts/tree/main/ofl/andika</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>The engine's interface sounds</td>
+<td><code>engine/audio/sounds/badge_chime.wav</code>, <code>engine/audio/sounds/break_chime.wav</code>, <code>engine/audio/sounds/camera_shutter.wav</code>, <code>engine/audio/sounds/quiz_right.wav</code>, <code>engine/audio/sounds/quiz_wrong.wav</code>, <code>engine/audio/sounds/step_done.wav</code>, <code>engine/audio/sounds/ui_back.wav</code>, <code>engine/audio/sounds/ui_click.wav</code>, <code>engine/audio/sounds/ui_close.wav</code>, <code>engine/audio/sounds/ui_hover.wav</code>, <code>engine/audio/sounds/ui_open.wav</code></td>
+<td>dav3studios (made by the engine's engine/audio/tools/make_sounds.py, procedural, no recordings)</td>
+<td>own work</td>
+<td>our own</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Software notice: Godot OpenXR Vendors plugin 5.1.0 (MIT)</td>
+<td><code>engine/ui/data/notices/godot_openxr_vendors_LICENSE.txt</code></td>
+<td>Godot XR contributors</td>
+<td><a href="https://opensource.org/license/mit">MIT</a></td>
+<td><a href="https://github.com/GodotVR/godot_openxr_vendors/blob/5.1.0-stable/LICENSE">https://github.com/GodotVR/godot_openxr_vendors/blob/5.1.0-stable/LICENSE</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>Software notice: Godot OpenXR Vendors plugin, vendor folders (Apache-2.0)</td>
+<td><code>engine/ui/data/notices/godot_openxr_vendors_Apache-2.0.txt</code></td>
+<td>Godot XR contributors</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a></td>
+<td><a href="https://github.com/GodotVR/godot_openxr_vendors/tree/5.1.0-stable">https://github.com/GodotVR/godot_openxr_vendors/tree/5.1.0-stable</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>Software notice: Meta SDK notice of the Godot OpenXR Vendors plugin</td>
+<td><code>engine/ui/data/notices/godot_openxr_vendors_meta_LICENSE-SDK.txt</code></td>
+<td>Facebook Technologies, LLC (Meta)</td>
+<td><a href="https://developer.oculus.com/licenses/oculussdk/">Oculus SDK License Agreement</a></td>
+<td><a href="https://github.com/GodotVR/godot_openxr_vendors/tree/5.1.0-stable">https://github.com/GodotVR/godot_openxr_vendors/tree/5.1.0-stable</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>Software notice: godot-cpp (MIT)</td>
+<td><code>engine/ui/data/notices/godot-cpp_LICENSE.txt</code></td>
+<td>Godot Engine contributors</td>
+<td><a href="https://opensource.org/license/mit">MIT</a></td>
+<td><a href="https://github.com/godotengine/godot-cpp/blob/58d1de720b8ffe9f8ffcdfe3a85148582cfd2e74/LICENSE.md">https://github.com/godotengine/godot-cpp/blob/58d1de720b8ffe9f8ffcdfe3a85148582cfd2e74/LICENSE.md</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>Software notice: Godot Meta Toolkit 1.0.3 (MIT)</td>
+<td><code>engine/ui/data/notices/godot_meta_toolkit_LICENSE.txt</code></td>
+<td>Meta Platforms, Inc. and affiliates</td>
+<td><a href="https://opensource.org/license/mit">MIT</a></td>
+<td><a href="https://github.com/godot-sdk-integrations/godot-meta-toolkit/blob/1.0.3-stable/LICENSE.txt">https://github.com/godot-sdk-integrations/godot-meta-toolkit/blob/1.0.3-stable/LICENSE.txt</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>Software notice: third-party notices of the Godot Meta Toolkit</td>
+<td><code>engine/ui/data/notices/godot_meta_toolkit_THIRD_PARTY_NOTICES.txt</code></td>
+<td>Meta Platforms, Inc. and affiliates</td>
+<td><a href="https://github.com/godot-sdk-integrations/godot-meta-toolkit/blob/1.0.3-stable/THIRD_PARTY_NOTICES.txt">Apache-2.0, BSD-2-Clause, BSD-3-Clause, 0BSD, MIT</a></td>
+<td><a href="https://github.com/godot-sdk-integrations/godot-meta-toolkit/blob/1.0.3-stable/THIRD_PARTY_NOTICES.txt">https://github.com/godot-sdk-integrations/godot-meta-toolkit/blob/1.0.3-stable/THIRD_PARTY_NOTICES.txt</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>Software notice: OpenXR Loader for Android 1.1.54 (Apache-2.0)</td>
+<td><code>engine/ui/data/notices/openxr_loader_LICENSE.txt</code></td>
+<td>The Khronos Group, Inc. OpenXR Working Group</td>
+<td><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a></td>
+<td><a href="https://github.com/KhronosGroup/OpenXR-SDK-Source">https://github.com/KhronosGroup/OpenXR-SDK-Source</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>Software notice: libc++ of the Android NDK</td>
+<td><code>engine/ui/data/notices/libcxx_LICENSE.txt</code></td>
+<td>The LLVM Project contributors</td>
+<td><a href="https://llvm.org/LICENSE.txt">Apache-2.0 WITH LLVM-exception, NCSA, MIT</a></td>
+<td><a href="https://github.com/llvm/llvm-project/tree/main/libcxx">https://github.com/llvm/llvm-project/tree/main/libcxx</a></td>
+<td>none</td>
+</tr>
+<tr>
+<td>The list of software notices</td>
+<td><code>engine/ui/data/notices/software_notices.json</code></td>
+<td>dav3studios (the list of notices)</td>
+<td>own work</td>
+<td>our own</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2>Store art and trailer</h2>
+<p>These files are on the store page, not in the app. dav3studios made them from the app's own boards, pieces, stones and screens.</p>
+<table>
+<thead>
+<tr>
+<th>What</th>
+<th>Files</th>
+<th>Made by</th>
+<th>Licence</th>
+<th>Source</th>
+<th>Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>The store art (covers, hero, mini landscape, icon, trailer cover, the transparent logo and the spatialized icon)</td>
+<td><code>store/art/*.png</code>, <code>store/art/logo_transparent.png</code>, <code>store/art/spatial_icon_background_512x512.png</code>, <code>store/art/spatial_icon_foreground_512x512.png</code>, <code>store/art/universal_basic_asset_2560x1440.png</code></td>
+<td>dav3studios</td>
+<td>own work</td>
+<td>our own (<code>tools/store/store_art.gd</code>)</td>
+<td>Rendered by Godot from the app's own boards, pieces and stones, made in code. The title uses Atkinson Hyperlegible Bold (SIL OFL 1.1, in the app). Not in the app: for the store only.</td>
+</tr>
+<tr>
+<td>The store trailer</td>
+<td><code>store/art/trailer_*.mp4</code></td>
+<td>dav3studios</td>
+<td>own work</td>
+<td>our own (<code>tools/store/make_trailer.py</code>)</td>
+<td>Recorded with Godot's Movie Maker from the app's own states with scripted camera moves (tools/store/trailer.gd), with the app's own sound. Encoded with ffmpeg on this PC (not shipped). No voice-over, no music and no outside picture.</td>
+</tr>
+<tr>
+<td>The Data Use Checkup pictures and the crop preview of the universal basic asset</td>
+<td><code>store/art/duc/*.png</code>, <code>store/art/review/*</code></td>
+<td>dav3studios</td>
+<td>own work</td>
+<td>our own (<code>tools/store/duc_shots.sh</code>)</td>
+<td>The Grown-ups &gt; Privacy page of the app (the app's own autoshots, src/store/autoshot_duc.gd) for Meta's Data Use Checkup form, and the crop preview that tools/store/universal_art.py makes. Not in the app: for the store form and for review only.</td>
+</tr>
+</tbody>
+</table>
+<h2>The coach's voice</h2>
+<p>Every spoken line is a recording that we made with a computer voice: the Kokoro-82M text-to-speech model (hexgrad, Apache License 2.0, https://github.com/hexgrad/kokoro/blob/main/LICENSE), voice <code>bm_george</code>. No person recorded the lines. The model itself is not in the app.</p>
+<h2>Fonts</h2>
+<p>Atkinson Hyperlegible by the Braille Institute of America, also as "Ux Reading" with a plain zero, and Andika by SIL International. Both are under the SIL Open Font License 1.1 (https://openfontlicense.org). The licence text of each font is in the app next to the font file.</p>
+<h2>Chess puzzles from Lichess</h2>
+<p>24 of the chess puzzles come from the Lichess puzzle database (https://database.lichess.org/), downloaded on 2026-10-07. Lichess says: "Database exports are released under the Creative Commons CC0 license". CC0 asks for no credit, but we give it. We chose short puzzles with the themes fork, pin, skewer and discovered attack, and our own rules and engine checked each one again. The app shows each puzzle after the first move of the Lichess line.</p>
+<table>
+<thead>
+<tr>
+<th>Lichess id</th>
+<th>Theme</th>
+<th>Puzzle page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q2ZXU</td>
+<td>fork</td>
+<td>https://lichess.org/training/Q2ZXU</td>
+</tr>
+<tr>
+<td>VQjbl</td>
+<td>fork</td>
+<td>https://lichess.org/training/VQjbl</td>
+</tr>
+<tr>
+<td>1WMKY</td>
+<td>fork</td>
+<td>https://lichess.org/training/1WMKY</td>
+</tr>
+<tr>
+<td>BcFbG</td>
+<td>fork</td>
+<td>https://lichess.org/training/BcFbG</td>
+</tr>
+<tr>
+<td>gMDPf</td>
+<td>fork</td>
+<td>https://lichess.org/training/gMDPf</td>
+</tr>
+<tr>
+<td>cakEk</td>
+<td>fork</td>
+<td>https://lichess.org/training/cakEk</td>
+</tr>
+<tr>
+<td>eJkdd</td>
+<td>pin</td>
+<td>https://lichess.org/training/eJkdd</td>
+</tr>
+<tr>
+<td>LG0CP</td>
+<td>pin</td>
+<td>https://lichess.org/training/LG0CP</td>
+</tr>
+<tr>
+<td>hksyn</td>
+<td>pin</td>
+<td>https://lichess.org/training/hksyn</td>
+</tr>
+<tr>
+<td>1EuFZ</td>
+<td>pin</td>
+<td>https://lichess.org/training/1EuFZ</td>
+</tr>
+<tr>
+<td>m66GJ</td>
+<td>pin</td>
+<td>https://lichess.org/training/m66GJ</td>
+</tr>
+<tr>
+<td>f74n3</td>
+<td>pin</td>
+<td>https://lichess.org/training/f74n3</td>
+</tr>
+<tr>
+<td>PEWkx</td>
+<td>skewer</td>
+<td>https://lichess.org/training/PEWkx</td>
+</tr>
+<tr>
+<td>BNeFU</td>
+<td>skewer</td>
+<td>https://lichess.org/training/BNeFU</td>
+</tr>
+<tr>
+<td>HMT0w</td>
+<td>skewer</td>
+<td>https://lichess.org/training/HMT0w</td>
+</tr>
+<tr>
+<td>NCuv9</td>
+<td>skewer</td>
+<td>https://lichess.org/training/NCuv9</td>
+</tr>
+<tr>
+<td>91ZxU</td>
+<td>skewer</td>
+<td>https://lichess.org/training/91ZxU</td>
+</tr>
+<tr>
+<td>TxBaO</td>
+<td>skewer</td>
+<td>https://lichess.org/training/TxBaO</td>
+</tr>
+<tr>
+<td>LDMBw</td>
+<td>discovered attack</td>
+<td>https://lichess.org/training/LDMBw</td>
+</tr>
+<tr>
+<td>ZuAAs</td>
+<td>discovered attack</td>
+<td>https://lichess.org/training/ZuAAs</td>
+</tr>
+<tr>
+<td>Yj9Pf</td>
+<td>discovered attack</td>
+<td>https://lichess.org/training/Yj9Pf</td>
+</tr>
+<tr>
+<td>1hdGX</td>
+<td>discovered attack</td>
+<td>https://lichess.org/training/1hdGX</td>
+</tr>
+<tr>
+<td>gHNv7</td>
+<td>discovered attack</td>
+<td>https://lichess.org/training/gHNv7</td>
+</tr>
+<tr>
+<td>X4Ab8</td>
+<td>discovered attack</td>
+<td>https://lichess.org/training/X4Ab8</td>
+</tr>
+</tbody>
+</table>
+<h2>Sources of the rules and facts</h2>
+<p>The rule cards and history cards in the app name their sources. We name these bodies and authors as sources only. They did not make, check or approve GambitWise. Each fact keeps a quote from its source page. The date is the date our checking tool found the quote on the source page. Each row is one source page, with the number of facts that the app takes from it.</p>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Page</th>
+<th>Facts</th>
+<th>Quote found</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>American Go Foundation, Brief history of Go</td>
+<td>https://www.agfgo.org/more/brief-history</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>American Go Foundation, Learn and Play</td>
+<td>https://www.agfgo.org/learn-and-play</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>Britannica, Chess: History</td>
+<td>https://www.britannica.com/topic/chess/History</td>
+<td>13</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>Britannica, Go (board game)</td>
+<td>https://www.britannica.com/topic/go-game</td>
+<td>3</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>British Go Association, About Junior Go</td>
+<td>https://www.britgo.org/junior/intro</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>British Go Association, Capture Go</td>
+<td>https://www.britgo.org/capturego</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>British Go Association, Go in Culture and History</td>
+<td>https://www.britgo.org/whatisgo/culture-history</td>
+<td>2</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>British Go Association, How to Play Go</td>
+<td>https://www.britgo.org/howtoplaygo</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>British Go Association, Play Go: How to Play</td>
+<td>https://www.britgo.org/intro/intro2.html</td>
+<td>17</td>
+<td>2026-10-06</td>
+</tr>
+<tr>
+<td>Chess in Schools and Communities, Chess and maths</td>
+<td>https://www.chessinschools.co.uk/maths-in-the-csc-curriculum</td>
+<td>2</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>Chess in Schools and Communities, The CSC Curriculum</td>
+<td>https://www.chessinschools.co.uk/csc-curriculum</td>
+<td>2</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>FIDE Laws of Chess taking effect from 1 January 2023 (FIDE Handbook E.01)</td>
+<td>https://handbook.fide.com/chapter/E012023</td>
+<td>35</td>
+<td>2026-10-08</td>
+</tr>
+<tr>
+<td>Google DeepMind, AlphaGo</td>
+<td>https://deepmind.google/research/alphago/</td>
+<td>3</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>IBM Heritage, Deep Blue</td>
+<td>https://www.ibm.com/history/deep-blue</td>
+<td>2</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>John Tromp, Number of legal Go positions</td>
+<td>https://tromp.github.io/go/legal.html</td>
+<td>2</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>John Tromp, The Logical Rules of Go (Tromp-Taylor)</td>
+<td>https://tromp.github.io/go.html</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>lichess.org open database</td>
+<td>https://database.lichess.org/</td>
+<td>3</td>
+<td>2026-10-07</td>
+</tr>
+<tr>
+<td>Meta Quest 3 health and safety warnings</td>
+<td>https://www.meta.com/legal/quest/health-and-safety-warnings/quest-3/</td>
+<td>2</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>Meta Quest Support, Clean your Meta Quest devices</td>
+<td>https://www.meta.com/help/quest/467048561217367/</td>
+<td>2</td>
+<td>2026-10-08</td>
+</tr>
+<tr>
+<td>National Museums Scotland, The story of the Lewis chess pieces</td>
+<td>https://www.nms.ac.uk/discover-catalogue/the-story-of-the-lewis-chess-pieces</td>
+<td>3</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>NHS, Common cold</td>
+<td>https://www.nhs.uk/conditions/common-cold/</td>
+<td>2</td>
+<td>2026-10-08</td>
+</tr>
+<tr>
+<td>Nihon Ki-in, How to Play Go (introduction)</td>
+<td>https://www.nihonkiin.or.jp/english/howto/howto0.htm</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>Official AGA Rules of Go (1 September 1991), mirror at Carnegie Mellon</td>
+<td>https://www.cs.cmu.edu/~wjh/go/rules/AGA.html</td>
+<td>5</td>
+<td>2026-10-06</td>
+</tr>
+<tr>
+<td>Steps Method, FAQ</td>
+<td>https://www.stappenmethode.nl/en/faq</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+<tr>
+<td>Steps Method, Info: workbooks</td>
+<td>https://www.stappenmethode.nl/en/info/workbooks</td>
+<td>1</td>
+<td>2026-10-05</td>
+</tr>
+</tbody>
+</table>
+<h2>Software in the app</h2>
+<p>The app is made with the Godot Engine and other software. Their licences ask for their notices in every copy. The full notices and licence texts are in the app, under Grown-ups &gt; Credits &gt; Software notices. The app reads Godot's notices from the engine itself, so they match the engine in the app.</p>
+<table>
+<thead>
+<tr>
+<th>Software</th>
+<th>Version</th>
+<th>Made by</th>
+<th>Licence</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Godot Engine</td>
+<td>4.7.2</td>
+<td>Copyright (c) 2014-present Godot Engine contributors (see AUTHORS.md). Copyright (c) 2007-2014 Juan Linietsky, Ariel Manzur.</td>
+<td>MIT (Expat)</td>
+<td>https://godotengine.org</td>
+</tr>
+<tr>
+<td>Godot OpenXR Vendors plugin</td>
+<td>5.1.0</td>
+<td>Copyright (c) 2022-present Godot XR contributors (see CONTRIBUTORS.md)</td>
+<td>MIT</td>
+<td>https://github.com/GodotVR/godot_openxr_vendors/tree/5.1.0-stable</td>
+</tr>
+<tr>
+<td>Godot Meta Toolkit</td>
+<td>1.0.3</td>
+<td>Copyright (c) 2024-present Meta Platforms, Inc. and affiliates. All rights reserved.</td>
+<td>MIT</td>
+<td>https://github.com/godot-sdk-integrations/godot-meta-toolkit/tree/1.0.3-stable</td>
+</tr>
+<tr>
+<td>Meta Platform SDK loader</td>
+<td>-</td>
+<td>Copyright © Meta Platform Technologies, LLC and its affiliates. All rights reserved.</td>
+<td>Meta Platform Technologies SDK License Agreement (formerly the Oculus SDK License Agreement), effective 25 October 2022, https://developers.meta.com/horizon/licenses/oculussdk/</td>
+<td>https://developers.meta.com/horizon/downloads/package/oculus-platform-sdk/</td>
+</tr>
+<tr>
+<td>OpenXR Loader for Android</td>
+<td>1.1.54</td>
+<td>The Khronos Group, Inc. OpenXR Working Group</td>
+<td>Apache-2.0</td>
+<td>https://github.com/KhronosGroup/OpenXR-SDK-Source</td>
+</tr>
+<tr>
+<td>libc++ (LLVM C++ standard library)</td>
+<td>-</td>
+<td>The LLVM Project contributors (see CREDITS.TXT)</td>
+<td>Apache-2.0 WITH LLVM-exception, and the legacy University of Illinois/NCSA or MIT licence</td>
+<td>https://github.com/llvm/llvm-project/tree/main/libcxx</td>
+</tr>
+<tr>
+<td>AndroidX libraries, Kotlin and kotlinx.coroutines</td>
+<td>-</td>
+<td>The Android Open Source Project; JetBrains</td>
+<td>Apache-2.0</td>
+<td>https://developer.android.com/jetpack/androidx</td>
+</tr>
+</tbody>
+</table>
+<p>The Godot Engine includes third-party parts under their own licences (MIT, Apache 2.0, BSD, zlib, MPL 2.0 and others). Godot lists each one, with its copyright and licence, in https://github.com/godotengine/godot/blob/4.7.2-stable/COPYRIGHT.txt.</p>
+<h2>Our own work</h2>
+<p>dav3studios wrote the app's own code: the GambitWise scripts, our shared app engine (GDScript), the chess and Go engines and the coach. dav3studios also made the boards, pieces and stones (made in code), the calm room, the coach's own puzzles and mini-games, the texts and the sounds (made by computer program, with no recordings). The app uses no code from other chess or Go programs. The Godot Engine, the two Godot plugins and the other software in "Software in the app" are not our work. Their makers and licences are listed there.</p>
+</main>
+<footer><p>GambitWise: Learn Chess and Go, for Meta Quest. Developer: dav3studios. Publisher: David Lee. Meta Quest is a trademark of Meta Platforms, Inc.</p></footer>
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* The app's website. Fonts are served from this site: no request to another server. */
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("fonts/AtkinsonHyperlegible-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Atkinson Hyperlegible"; src: url("fonts/AtkinsonHyperlegible-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+:root { --bg: #07090f; --panel: #10151f; --text: #eceff4; --muted: #aab4c3; --accent: #FFB23E; --rule: #26303f; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: "Atkinson Hyperlegible", system-ui, sans-serif; font-size: 1.125rem; line-height: 1.6; }
+header { border-bottom: 1px solid var(--rule); background: var(--panel); }
+nav { max-width: 60rem; margin: 0 auto; padding: 0.75rem 1rem; display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+nav a { color: var(--text); text-decoration: none; font-weight: 700; }
+nav a[aria-current="page"] { color: var(--accent); }
+main { max-width: 48rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1, h2, h3 { line-height: 1.25; }
+h1 { color: var(--accent); }
+a { color: var(--accent); }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; display: block; overflow-x: auto; }
+th, td { border: 1px solid var(--rule); padding: 0.35rem 0.5rem; text-align: left; vertical-align: top; }
+code { font-size: 0.95em; }
+footer { max-width: 48rem; margin: 0 auto; padding: 1rem; color: var(--muted); font-size: 0.95rem; border-top: 1px solid var(--rule); }
