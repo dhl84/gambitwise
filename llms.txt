@@ -1,0 +1,44 @@
+# GambitWise: Learn Chess and Go
+
+> Learn chess and Go one small step at a time, with a spoken coach. Put the board on your real table in mixed reality, or play in a calm virtual room. 27 steps teach the rules with mini-games and puzzles. Then play the coach at five named levels, from First steps to Strong club, or pass the headset to a friend. Four reading depths go from short and simple to expert detail. For ages 10 and up. No ads, no chat, no accounts, no in-app purchases and no personal data collected.
+
+- Price: Free
+- Headset: Meta Quest 3
+- Ages: For ages 10 and up.
+- Where it is sold: The Meta Horizon Store
+- Internet: Not required to use the app
+- Mixed reality: Yes, optional. In mixed reality the board sits on your real table. Without it, you play in a calm virtual room.
+- Controls: Hands or Meta Quest Touch controllers
+- Players: Single player, Two players on one headset (pass the headset)
+- Comfort: Comfortable
+- Language: English (UK)
+- Ads, chat and in-app purchases: None. The app collects no personal data.
+- Developer: dav3studios
+
+## Features
+
+- 16 chess steps and 11 Go steps, each at four reading depths
+- 43 mini-games and 115 puzzles, each checked by our own rules and engines
+- A spoken coach with subtitles, three-step hints, "Why?" and a short game review
+- Five named opponent levels, for chess, Go on 9x9 and Go on 13x13
+- An optional chess clock
+- Friend games on one headset
+- Mixed reality on your real table, or a calm virtual room
+- Seated play with hands or controllers, and one hand is enough
+- No ads, no chat, no accounts, no in-app purchases and no personal data collected
+
+## Links
+
+- [Meta Horizon Store page](https://www.meta.com/experiences/1477794802074442/): buy and install GambitWise
+- [Home](https://dhl84.github.io/gambitwise/)
+- [Privacy policy](https://dhl84.github.io/gambitwise/privacy.html)
+- [Credits](https://dhl84.github.io/gambitwise/credits.html)
+- [Help and support](https://dhl84.github.io/gambitwise/support.html)
+- [Terms of use](https://dhl84.github.io/gambitwise/terms.html)
+
+## More from dav3studios
+
+- [SpaceWise](https://dhl84.github.io/spacewise/): The real solar system at its true size and in true time, with eight narrated journeys.
+- [BodyWise](https://dhl84.github.io/bodywise/): A ride through the real human body, with blood cells at their real size.
+- [BeakerWise](https://dhl84.github.io/beakerwise/): 104 science experiments in biology, chemistry and physics on a virtual lab bench.
+- [EpochWise](https://dhl84.github.io/epochwise/): 45 moments of history on the real land, under the sky computed for that date.
