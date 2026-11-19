@@ -1,6 +1,6 @@
 # GambitWise: Learn Chess and Go
 
-> Learn chess and Go one small step at a time, with a spoken coach. Put the board on your real table in mixed reality, or play in a calm virtual room. 27 steps teach the rules with mini-games and puzzles. Then play the coach at five named levels, from First steps to Strong club, or pass the headset to a friend. Four reading depths go from short and simple to expert detail. For ages 10 and up. No ads, no chat, no accounts, no in-app purchases and no personal data collected.
+> Learn chess and Go one small step at a time, with a spoken coach. Put the board on your real table in mixed reality, or play in a calm virtual room. 27 steps teach the rules with mini-games and puzzles. Then play the coach at five named levels, from First steps to Strong club, or pass the headset to a friend. Four reading depths go from short and simple to expert detail. For ages 10 and up. No ads, no chat, no accounts and no in-app purchases.
 
 - Price: Free
 - Headset: Meta Quest 3
@@ -12,7 +12,8 @@
 - Players: Single player, Two players on one headset (pass the headset)
 - Comfort: Comfortable
 - Language: English (UK)
-- Ads, chat and in-app purchases: None. The app collects no personal data.
+- Ads, chat and in-app purchases: None
+- Data: The app collects the user ID and the age group of your Meta account. Both stay on the headset, and so does your progress. The privacy policy has the details.
 - Developer: dav3studios
 
 ## Features
@@ -25,7 +26,7 @@
 - Friend games on one headset
 - Mixed reality on your real table, or a calm virtual room
 - Seated play with hands or controllers, and one hand is enough
-- No ads, no chat, no accounts, no in-app purchases and no personal data collected
+- No ads, no chat, no accounts and no in-app purchases
 
 ## Links
 
