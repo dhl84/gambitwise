@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dhl84.github.io/gambitwise/</loc></url>
-  <url><loc>https://dhl84.github.io/gambitwise/privacy.html</loc></url>
-  <url><loc>https://dhl84.github.io/gambitwise/credits.html</loc></url>
-  <url><loc>https://dhl84.github.io/gambitwise/support.html</loc></url>
-  <url><loc>https://dhl84.github.io/gambitwise/terms.html</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url><loc>https://dhl84.github.io/gambitwise/</loc><lastmod>2026-11-25</lastmod><image:image><image:loc>https://dhl84.github.io/gambitwise/pictures/cover.png</image:loc></image:image><image:image><image:loc>https://dhl84.github.io/gambitwise/pictures/1.png</image:loc></image:image><image:image><image:loc>https://dhl84.github.io/gambitwise/pictures/2.png</image:loc></image:image><image:image><image:loc>https://dhl84.github.io/gambitwise/pictures/3.png</image:loc></image:image><video:video><video:thumbnail_loc>https://dhl84.github.io/gambitwise/video/trailer.jpg</video:thumbnail_loc><video:title>GambitWise: Learn Chess and Go trailer</video:title><video:description>Learn chess and Go one small step at a time, with a spoken coach. Put the board on your real table in mixed reality, or play in a calm virtual room. 27 steps teach the rules with mini-games and puzzles. Then play the coach at five named levels, from First steps to Strong club, or pass the headset to a friend. Four reading depths go from short and simple to expert detail. For ages 10 and up. No ads, no chat, no accounts and no in-app purchases.</video:description><video:content_loc>https://dhl84.github.io/gambitwise/video/trailer.mp4</video:content_loc><video:duration>59</video:duration><video:publication_date>2026-11-25</video:publication_date><video:family_friendly>yes</video:family_friendly></video:video></url>
+  <url><loc>https://dhl84.github.io/gambitwise/privacy.html</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://dhl84.github.io/gambitwise/credits.html</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://dhl84.github.io/gambitwise/support.html</loc><lastmod>2026-11-25</lastmod></url>
+  <url><loc>https://dhl84.github.io/gambitwise/terms.html</loc><lastmod>2026-11-25</lastmod></url>
 </urlset>

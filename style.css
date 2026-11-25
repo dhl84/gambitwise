@@ -17,6 +17,7 @@ th, td { border: 1px solid var(--rule); padding: 0.35rem 0.5rem; text-align: lef
 code { font-size: 0.95em; }
 img { max-width: 100%; height: auto; border-radius: 0.5rem; }
 figure { margin: 1.5rem 0; }
+video { display: block; width: 100%; height: auto; margin: 1rem 0; background: #000; }
 figcaption { color: var(--muted); font-size: 0.95rem; }
 .store { display: inline-block; margin: 0.5rem 0 1rem; padding: 0.6rem 1.1rem; border-radius: 0.5rem; background: var(--accent); color: var(--bg); font-weight: 700; text-decoration: none; }
 footer { max-width: 48rem; margin: 0 auto; padding: 1rem; color: var(--muted); font-size: 0.95rem; border-top: 1px solid var(--rule); }

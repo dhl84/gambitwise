@@ -36,10 +36,13 @@
 - [Credits](https://dhl84.github.io/gambitwise/credits.html)
 - [Help and support](https://dhl84.github.io/gambitwise/support.html)
 - [Terms of use](https://dhl84.github.io/gambitwise/terms.html)
+- [Trailer video](https://dhl84.github.io/gambitwise/video/trailer.mp4): 59 seconds, MP4
 
 ## More from dav3studios
 
-- [SpaceWise](https://dhl84.github.io/spacewise/): The real solar system at its true size and in true time, with eight narrated journeys.
+- [SpaceWise](https://dhl84.github.io/spacewise/): The real solar system at its true size and in true time, with nine narrated Journeys.
 - [BodyWise](https://dhl84.github.io/bodywise/): A ride through the real human body, with blood cells at their real size.
 - [BeakerWise](https://dhl84.github.io/beakerwise/): 104 science experiments in biology, chemistry and physics on a virtual lab bench.
 - [EpochWise](https://dhl84.github.io/epochwise/): 45 moments of history on the real land, under the sky computed for that date.
+- [CineWise](https://dhl84.github.io/cinewise/): Play your own 3D movie files from your NAS on a giant screen, with real depth.
+- [All apps from dav3studios](https://dhl84.github.io/)
